@@ -1,160 +1,166 @@
 /* Reset de margin e padding para garantir consistência */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos no cálculo da largura e altura */
 }
 
 /* Fontes e corpo principal */
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+    font-family: "Roboto", sans-serif; /* Define a fonte do corpo como Roboto, com uma alternativa sans-serif caso não disponível */
+    background-color: #f4f7f6; /* Define a cor de fundo do corpo como um tom suave de cinza */
+    color: #333; /* Define a cor do texto como um cinza escuro */
 }
 
 /* Estilo para o cabeçalho */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: space-between; /* Distribui os itens do cabeçalho com o máximo de espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    background-color: #333; /* Define a cor de fundo do cabeçalho como cinza escuro */
+    padding: 10px; /* Adiciona um espaçamento interno (padding) ao redor do conteúdo do cabeçalho */
 }
 
 header .logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
+    color: #fff; /* Define a cor do texto do logo como branco */
+    font-size: 24px; /* Define o tamanho da fonte do logo */
+    font-weight: bold; /* Define a fonte como negrito */
 }
 
 header nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 700;
+    color: #fff; /* Define a cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    margin: 0 15px; /* Adiciona um espaçamento horizontal entre os links */
+    font-weight: 700; /* Define o peso da fonte como negrito */
 }
 
 header nav a:hover {
-    color: #f5a623;
+    color: #f5a623; /* Altera a cor do texto para laranja quando o link é hovered (passa o mouse sobre ele) */
 }
 
 /* Estilo para a seção hero */
 .hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
-    padding: 100px 10%;
-    margin-bottom: 40px;
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: space-between; /* Distribui os itens da seção hero com o máximo de espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    background: linear-gradient(
+        135deg,
+        #1e3c72,
+        #2a5298
+    ); /* Aplica um gradiente de cor de fundo na seção */
+    color: white; /* Define a cor do texto como branco */
+    padding: 100px 10%; /* Adiciona um espaçamento interno generoso (100px no topo e embaixo, 10% nas laterais) */
+    margin-bottom: 40px; /* Adiciona uma margem na parte inferior da seção */
 }
 
 .hero-text {
-    flex: 1;
+    flex: 1; /* Define que o conteúdo de texto ocupará o espaço disponível */
 }
 
 .hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 3rem; /* Define o tamanho da fonte do título principal */
+    margin-bottom: 20px; /* Adiciona uma margem inferior ao título */
 }
 
 .hero-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.2rem; /* Define o tamanho da fonte do parágrafo */
+    line-height: 1.6; /* Define a altura da linha para aumentar o espaçamento entre as linhas de texto */
 }
 
 .hero-image {
-    background-color: #ccc;
-    height: 300px;
-    width: 600px; /* Altere a largura conforme necessário */
-    border-radius: 10px;
-    background-image: url("https://via.placeholder.com/300");
-    background-size: cover;
-    background-position: center;
+    background-color: #ccc; /* Define uma cor de fundo cinza claro enquanto a imagem de fundo carrega */
+    height: 300px; /* Define a altura da imagem */
+    width: 600px; /* Define a largura da imagem */
+    border-radius: 10px; /* Define bordas arredondadas para a imagem */
+    background-image: url("https://via.placeholder.com/300"); /* Define uma imagem de fundo com um link de placeholder */
+    background-size: cover; /* Faz a imagem de fundo cobrir completamente a área do elemento */
+    background-position: center; /* Centraliza a imagem de fundo dentro do elemento */
 }
 
 /* Estilo para a seção de cards */
 .cards-section {
-    display: flex;
-    justify-content: space-around;
-    margin: 40px 10%;
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: space-around; /* Distribui os cards com o máximo de espaço entre eles */
+    margin: 40px 10%; /* Adiciona margens ao redor da seção de cards */
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 30%;
-    text-align: center;
-    padding: 20px;
-    transition: transform 0.3s ease;
+    background-color: #fff; /* Define o fundo dos cards como branco */
+    border-radius: 10px; /* Arredonda as bordas do card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Aplica uma sombra suave ao redor do card */
+    overflow: hidden; /* Garante que o conteúdo que ultrapasse os limites do card seja escondido */
+    width: 30%; /* Define a largura de cada card */
+    text-align: center; /* Centraliza o texto dentro do card */
+    padding: 20px; /* Adiciona um espaçamento interno ao redor do conteúdo do card */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para transformações (usada no efeito de hover) */
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(
+        -10px
+    ); /* Move o card 10px para cima ao passar o mouse sobre ele */
 }
 
 .card-placeholder {
-    background-color: #ddd;
-    width: 100%;
-    height: 200px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    background-color: #ddd; /* Define a cor de fundo do placeholder como cinza claro */
+    width: 100%; /* Define a largura do placeholder para 100% do card */
+    height: 200px; /* Define a altura do placeholder */
+    border-radius: 8px; /* Arredonda as bordas do placeholder */
+    margin-bottom: 20px; /* Adiciona uma margem inferior ao placeholder */
 }
 
 .card p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.4;
-    font-weight: 300;
+    font-size: 1rem; /* Define o tamanho da fonte do texto dentro do card */
+    color: #333; /* Define a cor do texto como cinza escuro */
+    line-height: 1.4; /* Define a altura da linha para aumentar o espaçamento entre as linhas de texto */
+    font-weight: 300; /* Define o peso da fonte como leve */
 }
 
 /* Estilo do botão "Saiba Mais" */
 .saiba-mais {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    margin: 40px 0; /* Adiciona uma margem superior e inferior à seção do botão */
 }
 
 .saiba-mais button {
-    background-color: #23cbf5;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #23cbf5; /* Define a cor de fundo do botão como azul claro */
+    color: white; /* Define a cor do texto do botão como branco */
+    padding: 12px 30px; /* Adiciona padding interno ao botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 25px; /* Arredonda as bordas do botão */
+    font-size: 1rem; /* Define o tamanho da fonte do texto do botão */
+    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar o mouse sobre o botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo ao passar o mouse */
 }
 
 .saiba-mais button:hover {
-    background-color: #d88f1a;
+    background-color: #d88f1a; /* Altera a cor de fundo para laranja escuro quando o botão é hovered */
 }
 
 /* Estilo para o rodapé */
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 20px 10%;
-    margin-top: 40px;
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: space-between; /* Distribui os itens do rodapé com o máximo de espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    background-color: #333; /* Define a cor de fundo do rodapé como cinza escuro */
+    color: white; /* Define a cor do texto do rodapé como branco */
+    padding: 20px 10%; /* Adiciona espaçamento interno ao rodapé */
+    margin-top: 40px; /* Adiciona uma margem superior ao rodapé */
 }
 
 footer .logo {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 20px; /* Define o tamanho da fonte do logo no rodapé */
+    font-weight: bold; /* Define o peso da fonte do logo no rodapé como negrito */
 }
 
 footer a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 0.9rem;
+    color: white; /* Define a cor do texto dos links no rodapé como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin-left: 20px; /* Adiciona uma margem à esquerda dos links */
+    font-size: 0.9rem; /* Define o tamanho da fonte dos links no rodapé */
 }
 
 footer a:hover {
-    color: #f5a623;
+    color: #f5a623; /* Altera a cor dos links para laranja quando o mouse passa sobre eles */
 }
