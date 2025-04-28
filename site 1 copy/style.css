@@ -1,0 +1,160 @@
+/* Reset de margin e padding para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes e corpo principal */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+}
+
+header nav a:hover {
+    color: #f5a623;
+}
+
+/* Estilo para a seção hero */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 100px 10%;
+    margin-bottom: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.hero-image {
+    background-color: #ccc;
+    height: 300px;
+    width: 600px; /* Altere a largura conforme necessário */
+    border-radius: 10px;
+    background-image: url("https://via.placeholder.com/300");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo para a seção de cards */
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 10%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-placeholder {
+    background-color: #ddd;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+/* Estilo do botão "Saiba Mais" */
+.saiba-mais {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.saiba-mais button {
+    background-color: #23cbf5;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.saiba-mais button:hover {
+    background-color: #d88f1a;
+}
+
+/* Estilo para o rodapé */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 10%;
+    margin-top: 40px;
+}
+
+footer .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    color: #f5a623;
+}
