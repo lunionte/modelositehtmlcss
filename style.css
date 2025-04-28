@@ -82,22 +82,31 @@ nav a {
     padding: 30px 30px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 30px; /* Aumenta o espaço entre os cards */
+    flex-wrap: wrap; /* Permite que os cards se movam para novas linhas, se necessário */
 }
 
 .card {
-    width: 300px;
-    height: 200px;
+    width: 400px; /* Aumenta a largura do card */
+    height: auto; /* Ajusta automaticamente a altura */
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efeito de sombra para o card */
+    background-color: #fff;
+    margin-bottom: 30px; /* Espaço entre os cards na linha */
+    padding: 20px; /* Adiciona preenchimento interno */
 }
 
+/* Ajuste no Placeholder da Imagem */
 .card-placeholder {
-    width: 100%;
-    height: 150px;
+    width: 100%; /* A largura ocupa toda a largura do card */
+    height: 300px; /* Aumenta a altura da imagem */
     background-color: #e5e7eb;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Aumenta o espaço entre a imagem e o texto */
+    border-radius: 8px; /* Arredonda as bordas da área da imagem */
 }
 
+/* Texto do Card */
 .card p {
     font-size: 14px;
     color: #666;
